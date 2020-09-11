@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="createClient"
+                android:text="Creer un nouveau compte" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteClient"
+                android:text="Effacer un compte" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateClient"
+                android:text="Modifier un compte" />
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="selectClient"
+                android:text="Informations d'un compte" />
+
+            <Button
+                android:id="@+id/btnDelinquants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="listeClient"
+                android:text="Liste des comptes delinquants" />
+
+            <Button
+                android:id="@+id/btnCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateCredit"
+                android:text="Modifier le credit d'un compte" />
+
+            <Button
+                android:id="@+id/btnSolde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="updateSolde"
+                android:text="Modifier le solde d'un compte" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.widget.RelativeLayout>

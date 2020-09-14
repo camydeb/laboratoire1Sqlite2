@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UpdateClient"></activity>
+        <activity android:name=".infosClient"></activity>
+        <activity android:name=".updateCredit" />
+        <activity android:name=".UpdateClient" />
         <activity android:name=".deleteClient" />
         <activity android:name=".newClient" />
         <activity android:name=".MainActivity">

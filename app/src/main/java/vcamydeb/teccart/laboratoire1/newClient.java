@@ -18,7 +18,7 @@ public class newClient extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_client);
+        //setContentView(R.layout.activity_new_client);
     }
 
     public void createNewClient(View view) {

@@ -17,7 +17,7 @@ public class deleteClient extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_delete_client);
+        //setContentView(R.layout.activity_delete_client);
     }
 
     public void delClient(View view) {

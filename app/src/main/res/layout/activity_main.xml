@@ -42,7 +42,7 @@
                 android:id="@+id/btnSelect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="selectClient"
+                android:onClick="infosCompte"
                 android:text="Informations d'un compte" />
 
             <Button

@@ -12,44 +12,76 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_marginTop="150dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:background="#009688"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="GESTION DES COMPTES CLIENTS"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnCreate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="#009688"
                 android:onClick="createClient"
-                android:text="Creer un nouveau compte" />
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Creer un nouveau compte"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btnDelete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#009688"
                 android:onClick="deleteClient"
-                android:text="Effacer un compte" />
+                android:text="Effacer un compte"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/btnUpdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="updateClient"
+                android:layout_margin="5dp"
+                android:background="#009688"
+                android:textColor="#FFFFFF"
                 android:text="Modifier un compte" />
 
             <Button
                 android:id="@+id/btnSelect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="infosCompte"
-                android:text="Informations d'un compte" />
+                android:onClick="listecomptes"
+                android:layout_margin="5dp"
+                android:background="#009688"
+                android:textColor="#FFFFFF"
+                android:text="Informations d'un compte"
+                tools:ignore="OnClick" />
 
             <Button
                 android:id="@+id/btnDelinquants"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="listeClient"
+                android:onClick="listeDelinquants"
+                android:layout_margin="5dp"
+                android:background="#009688"
+                android:textColor="#FFFFFF"
                 android:text="Liste des comptes delinquants" />
 
             <Button
@@ -57,6 +89,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="updateCredit"
+                android:layout_margin="5dp"
+                android:background="#009688"
+                android:textColor="#FFFFFF"
                 android:text="Modifier le credit d'un compte" />
 
             <Button
@@ -64,6 +99,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="updateSolde"
+                android:layout_margin="5dp"
+                android:background="#009688"
+                android:textColor="#FFFFFF"
                 android:text="Modifier le solde d'un compte" />
 
         </LinearLayout>

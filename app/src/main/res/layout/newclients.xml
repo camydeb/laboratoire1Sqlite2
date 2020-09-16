@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".UpdateClient">
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,30 +10,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textViewModif"
+                android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#009688"
-                android:text="Modification de compte"
+                android:text="Creation de compte client"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="150dp"
                 android:background="#009688"
-                android:foregroundTint="#009688"
-                android:text="Compte a modifier :"
+                android:lineSpacingExtra="14sp"
+                android:text="Rentrez les informations du client : "
                 android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/editTextNom"
@@ -53,16 +48,6 @@
                 android:ems="10"
                 android:hint="Prenom"
                 android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:background="#009688"
-                android:text="Modifications :"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/editTextAdresse"
@@ -109,9 +94,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#009688"
-                android:onClick="UpdateClient"
-                android:text="Modifier le compte"
-                android:textColor="#FFFFFF" />
+
+                android:text="Creer le nouveau client"
+                android:textColor="#FFFFFF"
+                android:onClick="newClient"/>
         </LinearLayout>
     </ScrollView>
 </android.widget.RelativeLayout>

@@ -1,6 +1,8 @@
 package vcamydeb.teccart.laboratoire1;
+import java.io.Serializable;
 
-public class client {
+
+public class client  {
     private String nom;
     private String prenom;
     private String adresse;

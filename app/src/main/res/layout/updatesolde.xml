@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".updateCredit">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#009688"
-                android:text="Modification de credit "
+                android:text="Modification de solde "
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -59,17 +56,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
                 android:background="#009688"
-                android:text="Nouveau credit : "
+                android:text="Nouveau solde : "
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
 
             <EditText
-                android:id="@+id/editTextCrédit"
+                android:id="@+id/editTextsolde"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="credit"
+                android:hint="solde"
                 android:inputType="textPersonName" />
 
             <Button
@@ -77,9 +74,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#009688"
-                android:onClick="UpdateCredit"
-                android:text="Modifier le credit du compte"
+                android:onClick="UpdateSolde"
+                android:text="Modifier le solde du compte"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
     </ScrollView>
-</android.widget.RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

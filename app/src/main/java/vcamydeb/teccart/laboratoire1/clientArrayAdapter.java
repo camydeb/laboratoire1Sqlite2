@@ -40,10 +40,11 @@ public class clientArrayAdapter extends ArrayAdapter<client> {
         TextView credit = (TextView)convertView.findViewById(R.id.lblCredit);
         TextView solde =(TextView) convertView.findViewById(R.id.lblSolde);
 
-        nom.setText("Nom:" +temp.getNom());
-        prenom.setText("Prenom:"+temp.getPrenom());
-        credit.setText("Credit:"+temp.getCredit());
-        solde.setText("Solde:"+temp.getSolde());
+
+        nom.setText(temp.getNom());
+        prenom.setText(temp.getPrenom());
+        credit.setText("Credit :  "+temp.getCredit()+"$");
+        solde.setText("Solde :  "+temp.getSolde()+"$");
 
         return convertView;
     }
